@@ -1,0 +1,502 @@
+body {
+  margin: 0px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/*Header*/
+#body-header {
+  background-image: url("images/Header-background.jpg");
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.nav {
+  padding-left: 0px;
+  text-align: center;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+  font: 2em sans-serif;
+}
+.navbar li a {
+  transition: color 1s;
+  transition: border-bottom 2s;
+}
+.navbar li a:hover {
+  border-bottom: 1px solid white;
+  color: lightgray;
+}
+
+#Name {
+  font: 4rem sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(250, 253, 250);
+  margin-top: 100px;
+  letter-spacing: 0.1rem;
+}
+
+.social-nav li {
+  font-size: 1em;
+  margin: 10px 20px;
+}
+.social-nav li a i {
+  border-radius: 40%;
+}
+.social-nav li a i:hover {
+  box-shadow: 0px 0px 10px 7px rgba(230, 196, 196, 0.7);
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+section:nth-child(2n) {
+  background-color: #edfeff;
+}
+section:nth-child(2n + 1) {
+  background-color: white;
+}
+/*About*/
+#about {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+#my-image {
+  height: 15rem;
+  width: 15rem;
+  margin: auto;
+  margin-top: -17vh;
+}
+
+#my-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  border: solid 4px white;
+  box-shadow: 0px 0px 10px 7px rgba(230, 196, 196, 0.7);
+}
+
+#about p {
+  width: 75%;
+  margin: auto;
+  margin-top: 70px;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  background-color: rgb(255 245 238 / 70%);
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+
+/*Skills*/
+.section-heading {
+  width: auto;
+  padding: 20px 10px 10px;
+  margin: 10px auto;
+  font-weight: 400;
+}
+.section-heading span {
+  font-size: 40px;
+  color: #2857a4;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+}
+.skills-display {
+  width: 70%;
+  /*height: 100px;
+  border: 2px solid black;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.skill-progress {
+  width: 15rem;
+  height: 2rem;
+  background-color: lightgray;
+  border-radius: 1rem;
+  border: 2px black solid;
+  margin: 25px;
+  box-shadow: 6px 5px 5px 2px rgb(19 19 19);
+}
+
+/*Percentage classes*/
+.eighty-five-percent {
+  width: 85%;
+  height: inherit;
+}
+.ninty-percent {
+  width: 90%;
+  height: inherit;
+}
+.forty-percent {
+  width: 40%;
+  height: inherit;
+}
+.skillbar-blue {
+  background-color: #2857a4;
+}
+.skill-name span {
+  color: white;
+  font-size: 1.1rem;
+  margin: 15px;
+}
+.skill-name {
+  padding-top: 3.5px;
+}
+
+.skill-progress > div {
+  border-radius: 20px 0px 0px 20px;
+}
+
+/*Education*/
+.timeline {
+  position: relative;
+  width: 75%;
+}
+.timeline-box:nth-child(2n) {
+  left: 53%;
+}
+.timeline-box:nth-child(2n + 1)::after {
+  content: "";
+  position: absolute;
+  top: 35%;
+  right: -11.5%;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: red;
+  z-index: 1;
+}
+.timeline-box:nth-child(2n)::after {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: -10%;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: red;
+  z-index: 1;
+}
+
+.timeline-box {
+  width: 40%;
+  left: 5%;
+  margin: 10px;
+  min-height: 150px;
+  position: relative;
+}
+.timeline-divider {
+  position: absolute;
+  height: 75%;
+  width: 0;
+  border: 3px dashed gray;
+  top: 10%;
+  left: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline-divider {
+    left: 8.2%;
+  }
+  .timeline-box {
+    left: 12% !important;
+    width: 80%;
+  }
+  /* .timeline-box:nth-child(2n) {
+    left: 12%;
+  } */
+  .timeline-box:nth-child(2n + 1)::after {
+    left: -10%;
+  }
+  html {
+    font-size: 15px;
+  }
+}
+
+.timeline-travller {
+  position: sticky;
+  top: 20%;
+  transform: rotate(90deg);
+  font-size: large;
+  z-index: 2;
+}
+
+.timeline-box-heading {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.timeline-box-heading-logo-chit {
+  background-image: url("images/VIT.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  min-width: 50px;
+}
+.timeline-box-heading-logo-lass {
+  background-image: url("images/xav1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
+  min-width: 50px;
+}
+.timeline-box-heading-logo-ge {
+  background-image: url("images/jp.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 80px;
+  margin-right: 5px;
+  min-width: 50px;
+  margin-top: 5px;
+}
+.timeline-box-heading-logo-gi {
+  background-image: url("images/engineersCradle.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 80px;
+  margin-right: 5px;
+  min-width: 50px;
+  margin-top: 5px;
+}
+.timeline-box-heading-name {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+}
+.degree {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #2857a4;
+  font-family: "Times New Roman", Times, serif;
+}
+.uni-name {
+  font-size: 1.2em;
+  font: bolder;
+  color: rgb(219, 65, 65);
+}
+.batch {
+  font: 1.1em;
+  font: bolder;
+  color: aqua;
+  font-family: cursive;
+}
+
+/*Portfolio*/
+#portfolio {
+  background: linear-gradient(rgb(201, 102, 102), white);
+}
+.project {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  height: auto;
+  background-color: white;
+  background-clip: border-box;
+  width: 280px;
+  border-radius: 5%;
+  margin: 30px;
+  opacity: 0;
+}
+.project-anim {
+  animation: anim 1s ease 1 forwards;
+}
+@keyframes anim {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.project-body {
+  flex: 1 1 auto;
+  padding: 5px;
+  color: black;
+}
+.project-image {
+  height: 200px;
+  width: 100%;
+}
+.project-title {
+  font: 30px bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.source-code {
+  margin: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: blue;
+}
+
+.source-code a {
+  text-decoration: none;
+  border: 2px solid darkgray;
+}
+.source-code a:active,
+.source-code a:hover {
+  color: red;
+}
+
+/*Contact*/
+#contact {
+  background: linear-gradient(120deg, rgb(35, 2, 95), purple);
+  margin-bottom: 0px;
+  margin-top: -45px;
+  position: relative;
+}
+
+.form input {
+  border-style: none;
+  border-color: transparent;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  border-bottom: 3px white solid;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.form button {
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-left: 25%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  padding: 3px;
+}
+.form button:hover {
+  color: red;
+}
+.location {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-heading {
+  font-weight: 350px;
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+.location-lines {
+  font-weight: 250px;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+html {
+  font-size: 15px;
+}
+@media screen and (max-width: 992px) {
+  .navbar li {
+    font-size: 1rem;
+    margin: 10px 10px 10px 10px;
+  }
+  #about p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #body-header {
+    height: 65vh;
+  }
+  #my-image {
+    height: 13rem;
+    width: 13rem;
+  }
+  #Name {
+    font-size: 3.5rem;
+  }
+  #about p {
+    font-size: 1.3rem;
+  }
+  .navbar li {
+    font-size: 0.8rem;
+    margin: 10px 10px 10px 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+  .navbar li {
+    display: none;
+    margin: 0px;
+  }
+  #body-header {
+    height: 60vh;
+  }
+  #Name {
+    margin-top: 0px;
+    padding-top: 35%;
+    font-size: 2rem;
+  }
+  .social-nav li {
+    font-size: 0.8em;
+    margin: 10px 10px;
+  }
+
+  /* #my-image img {
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+    border: solid 4px white;
+    box-shadow: 0px 0px 10px 7px rgba(230, 196, 196, 0.7);
+  } */
+  #my-image {
+    height: 10rem;
+    width: 10rem;
+    margin: auto;
+    margin-top: -13vh;
+  }
+  #about p {
+    font-size: 1rem;
+  }
+  .location-lines {
+    font-size: 1.1rem;
+  }
+}
